@@ -8,6 +8,10 @@ https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/i
 
 ```
 
+
+## 실습 아키텍처
+![img](./lambda-arch.png)
+
 ## sample source download
 ```
 git clone https://github.com/azjaehyun/lambda-s3-apigateway
@@ -173,3 +177,6 @@ sam remove
 
 ## 참조 사이트
 - [서버리스를 이용하여 Amazon S3에 직접 파일 업로드 하기](https://aws.amazon.com/ko/blogs/korea/uploading-to-amazon-s3-directly-from-a-web-or-mobile-application/)
+
+## 참조 영상
+- [S3 파일 업로드/다운로드는 이렇게 하세요 : Serverless 아키텍처에서 S3로 파일 업로드/다운로드 총 정리!](https://www.youtube.com/watch?v=f9LZWCSgojE)
