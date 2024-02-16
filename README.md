@@ -19,9 +19,9 @@ AWS SAM CLI는 AWS SAM 템플릿과 지원되는 타사 통합과 함께 사용�
 ```
 version = 0.1
 [default.deploy.parameters]
-stack_name = "s3uploader-lambda"
+stack_name = "s3uploader-lambda"  << 본인이 생성하고 싶은 이름으로 수정 (s3_prefix과 이름 같게)
 resolve_s3 = true
-s3_prefix = "s3uploader-lambda"
+s3_prefix = "s3uploader-lambda" << 본인이 생성하고 싶은 이름으로 수정 (stack_name과 이름 같게)
 region = "us-west-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
@@ -30,7 +30,7 @@ image_repositories = []
 ```
 
 
-### sam 명령어를 통해서 deploy 하자!
+### sam 명령어를 통해서 deploy 하자! ( 이걸 하면 apigateway + lambda + s3 가 생성된다! )
 ```
 ➜  amazon-s3-presigned-urls-aws-sam git:(master) sam deploy
 
@@ -122,11 +122,19 @@ Value               s3uploader-lambda-s3uploadbucket-1y86jl8uwcvv
 
 Successfully created/updated stack - s3uploader-lambda in us-west-2
 ```
+---
+### aws ui 화면에 가서 lambda가 잘 생성되었는지 확인 !
 
+
+
+---
 ### 파일업로드 할 정적 페이지 index.html 올릴 s3 생성 ( 나는 s3-html-index 로 만듬 )
-해당 경로에 amazon-s3-presigned-urls-aws-sam/frontend/index.html 인 index.html 파일 업로드
+- index.html 올리기전에 수정하기
+28 line 에 const API_ENDPOINT = 'https://uzgemq6u9l.execute-api.us-west-2.amazonaws.com/uploads'  << 수정
+- 해당 경로에 amazon-s3-presigned-urls-aws-sam/frontend/index.html 인 index.html 파일 업로드
 
 
+---
 ### 업로드 후에 정적페이지 s3 index.html 호스팅 방법 아래 링크 보고 똑같이 따라하기.
 ```
 https://longtermsad.tistory.com/44
@@ -151,5 +159,6 @@ https://longtermsad.tistory.com/44
 
 ## 모든 자원 삭제 ( s3 버킷 안에 내용 다 삭제 한 후에 )
 ```
+cd amazon-s3-presigned-urls-aws-sam
 sam remove
 ```
