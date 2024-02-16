@@ -1,8 +1,15 @@
 
 # 사전 준비
 ### sam install
+- [실행위치 sam을 설치할수 있는 곳 어디든. 본인은 mac local에 sam 설치후 사용함]
+- 아래 주소에서 본인의 OS 에 맞는걸 다운받아서 설치하기
 ```
 https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html
+
+```
+
+## sample source download
+```
 git clone https://github.com/aws-samples/amazon-s3-presigned-urls-aws-sam
 cd amazon-s3-presigned-urls-aws-sam
 sam deploy --guided << 명령어 때리기 전에 samconfig.toml 수정
