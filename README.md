@@ -148,3 +148,8 @@ https://longtermsad.tistory.com/44
     ]
 }
 ```
+
+## 모든 자원 삭제 ( s3 버킷 안에 내용 다 삭제 한 후에 )
+```
+sam remove
+```
