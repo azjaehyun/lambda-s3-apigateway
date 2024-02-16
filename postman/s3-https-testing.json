@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "7a745055-4f7b-4b26-b903-b81830938f6e",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16903690"
+	},
+	"item": [
+		{
+			"name": "Step-1-presign",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Step-2-upload",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/Users/jaehyun.yang/Desktop/떴다.png"
+					}
+				},
+				"url": {
+					"raw": "https://jaehyun-app-s3uploadbucket-m8uacf6dxrik.s3.us-west-2.amazonaws.com/5941044.jpg?AWSAccessKeyId=ASIA3FLHDRPRNAVPKGHU&Content-Type=image%2Fjpeg&Expires=1708061905&Signature=A7JKfQMzPzjE7dzQkHAz9lZToMY%3D&X-Amzn-Trace-Id=Root%3D1-65cef3a5-2b37d03225af6b0641eaaec8%3BParent%3D1020041337a43b71%3BSampled%3D0%3BLineage%3D6a018e39%3A0&x-amz-security-token=IQoJb3JpZ2luX2VjEN7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIB7pAiNtnSfP2g%2Bwzs9h6S0TR3kVp5WE6gUjS4ridPNhAiAwgPFc54DqD%2BJR6xaIKxAZZeyEJVU%2BDKlq0j1bCTUl5iq6Awi3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDc2NzQwNDc3MjMyMiIM8oj3b9rlZ9kcqCx1Ko4D5yr8EHMcA1dpSkvT9A2vMhVR0yCwietDTURQi1k5Rs3adMyNmET6mfAJ39B2%2FtOB6VxQgtgjKfFIgBsYw2%2F7irOTScxxytZUbaN%2FLh4ChCkFjL2FsUDd%2FaH1VYIYYj5B4sd3hUuW5s0h5uY1Bt4Pxfs3jyOAEJ8b27sSgtDkO7MtHmWHepeU6yJGSqv5A%2FN9OJGbHXDRP6CCd5J34Sy6P%2BzVHA4nMV0YfKIN6NkpavBdfQsqukeAYe9ReWy9u8vZ6JHuQNpFlFp9R7EdeUkuyLV8a4AUcIIOa%2FW9fTSuq0U8XXRb0pDyilY%2FDC1cZPdV13nlOuSD76O480scSbVi87tfRhtMpvzftg9pXeLtu1%2Fo9ms4z8p7bhqEIutUBh1nJ4R6HTbwnSx0K%2FnX7gGHEeQx8Q4kCbfyV5AX3UEg5yW8xS%2B%2FMrix1EC9nrn5JeLpA6rol6DcMgs7XwTcpOYHlFoLuN%2FpvXfBskDGO9QXBWxo%2F4%2B4GbbAa%2ByR8JTLxxtC0KQiKnZOcFOrheObRv4w5uO7rgY6ngHvJhCh86XgQRaAw5toYbw0uSheILUFEhUXkkjGVtPxy7Sha0kHAHbGEkaGYip4ndKRaCgizjN5XZbet0eOEEWFjMF%2BUrXFFwrNW2RzmsVsu1qgxTjfkGQrqVm16HE0ghYbd1qAz4wtkPVi7go%2BkN2%2FGlvhkBNCXf3fWlTc%2Fw0e4vpYot0erfQf5WFzTLstKaS%2FsJLe0wvbmei%2Bg%2Bkgdw%3D%3D",
+					"protocol": "https",
+					"host": [
+						"jaehyun-app-s3uploadbucket-m8uacf6dxrik",
+						"s3",
+						"us-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"5941044.jpg"
+					],
+					"query": [
+						{
+							"key": "AWSAccessKeyId",
+							"value": "ASIA3FLHDRPRNAVPKGHU"
+						},
+						{
+							"key": "Content-Type",
+							"value": "image%2Fjpeg"
+						},
+						{
+							"key": "Expires",
+							"value": "1708061905"
+						},
+						{
+							"key": "Signature",
+							"value": "A7JKfQMzPzjE7dzQkHAz9lZToMY%3D"
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root%3D1-65cef3a5-2b37d03225af6b0641eaaec8%3BParent%3D1020041337a43b71%3BSampled%3D0%3BLineage%3D6a018e39%3A0"
+						},
+						{
+							"key": "x-amz-security-token",
+							"value": "IQoJb3JpZ2luX2VjEN7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIB7pAiNtnSfP2g%2Bwzs9h6S0TR3kVp5WE6gUjS4ridPNhAiAwgPFc54DqD%2BJR6xaIKxAZZeyEJVU%2BDKlq0j1bCTUl5iq6Awi3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDc2NzQwNDc3MjMyMiIM8oj3b9rlZ9kcqCx1Ko4D5yr8EHMcA1dpSkvT9A2vMhVR0yCwietDTURQi1k5Rs3adMyNmET6mfAJ39B2%2FtOB6VxQgtgjKfFIgBsYw2%2F7irOTScxxytZUbaN%2FLh4ChCkFjL2FsUDd%2FaH1VYIYYj5B4sd3hUuW5s0h5uY1Bt4Pxfs3jyOAEJ8b27sSgtDkO7MtHmWHepeU6yJGSqv5A%2FN9OJGbHXDRP6CCd5J34Sy6P%2BzVHA4nMV0YfKIN6NkpavBdfQsqukeAYe9ReWy9u8vZ6JHuQNpFlFp9R7EdeUkuyLV8a4AUcIIOa%2FW9fTSuq0U8XXRb0pDyilY%2FDC1cZPdV13nlOuSD76O480scSbVi87tfRhtMpvzftg9pXeLtu1%2Fo9ms4z8p7bhqEIutUBh1nJ4R6HTbwnSx0K%2FnX7gGHEeQx8Q4kCbfyV5AX3UEg5yW8xS%2B%2FMrix1EC9nrn5JeLpA6rol6DcMgs7XwTcpOYHlFoLuN%2FpvXfBskDGO9QXBWxo%2F4%2B4GbbAa%2ByR8JTLxxtC0KQiKnZOcFOrheObRv4w5uO7rgY6ngHvJhCh86XgQRaAw5toYbw0uSheILUFEhUXkkjGVtPxy7Sha0kHAHbGEkaGYip4ndKRaCgizjN5XZbet0eOEEWFjMF%2BUrXFFwrNW2RzmsVsu1qgxTjfkGQrqVm16HE0ghYbd1qAz4wtkPVi7go%2BkN2%2FGlvhkBNCXf3fWlTc%2Fw0e4vpYot0erfQf5WFzTLstKaS%2FsJLe0wvbmei%2Bg%2Bkgdw%3D%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
