@@ -10,8 +10,8 @@ https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/i
 
 ## sample source download
 ```
-git clone https://github.com/aws-samples/amazon-s3-presigned-urls-aws-sam
-cd amazon-s3-presigned-urls-aws-sam
+git clone https://github.com/azjaehyun/lambda-s3-apigateway
+cd ./lambda-s3-apigateway/amazon-s3-presigned-urls-aws-sam
 sam deploy --guided << 명령어 때리기 전에 samconfig.toml 수정
 ```
 
@@ -169,3 +169,7 @@ https://longtermsad.tistory.com/44
 cd amazon-s3-presigned-urls-aws-sam
 sam remove
 ```
+
+
+## 참조 사이트
+- [서버리스를 이용하여 Amazon S3에 직접 파일 업로드 하기](https://aws.amazon.com/ko/blogs/korea/uploading-to-amazon-s3-directly-from-a-web-or-mobile-application/)
