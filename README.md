@@ -24,6 +24,10 @@ sam deploy --guided << 명령어 때리기 전에 samconfig.toml 수정
 AWS SAM CLI는 AWS SAM 템플릿과 지원되는 타사 통합과 함께 사용하여 서버리스 애플리케이션을 빌드하고 실행할 수 있는 명령줄 도구입니다.
 ```
 
+### aws configure 설정
+```
+aws configure << 입력후 본인 비밀키 시크릿키 리전 넣기
+```
 
 
 ### samconfig.toml 수정 예시 아래
@@ -33,7 +37,7 @@ version = 0.1
 stack_name = "s3uploader-lambda"  << 본인이 생성하고 싶은 이름으로 수정 (s3_prefix과 이름 같게)
 resolve_s3 = true
 s3_prefix = "s3uploader-lambda" << 본인이 생성하고 싶은 이름으로 수정 (stack_name과 이름 같게)
-region = "us-west-2"
+region = "us-west-2" << 본인의 region으로 ..
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 disable_rollback = true
