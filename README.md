@@ -14,7 +14,7 @@ https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/i
 
 ## sample source download
 ```
-git clone https://github.com/azjaehyun/lambda-s3-apigateway
+git clone https://github.com/azjaehyun/lambda-s3-apigateway.git
 cd ./lambda-s3-apigateway/amazon-s3-presigned-urls-aws-sam
 sam deploy --guided << 명령어 때리기 전에 samconfig.toml 수정
 ```
